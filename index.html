@@ -8,8 +8,8 @@
   <title>Ping Coming Soon Page</title>
 </head>
 <body>
-  <div class="flex min-h-screen flex-col items-center justify-center gap-12 p-6 text-center transition-colors duration-300 dark:bg-gray-900 md:p-10">
-    <header>
+  <div class="flex min-h-screen flex-col items-center justify-center gap-9 p-6 text-center transition-colors duration-300 dark:bg-gray-900 md:p-10">
+    <header class="mt-8">
       <a href="">
         <img src="./public/images/PING Mobile.svg" alt="Business Name">
       </a>
@@ -20,12 +20,12 @@
         </svg>
       </label>
     </header>
-    <main>
-      <h1 class="text-2xl text-custom-gray">We are launching <span class="text-custom-black">soon!</span></h1>
+    <main class="flex flex-col gap-4">
+      <h1 class="text-2xl font-light text-custom-gray">We are launching <span class="text-custom-black">soon!</span></h1>
       <p>Subscribe and get notified</p>
       <form action="">
-        <label for="email">Email Address</label>
-        <input id="email" placeholder="Your email address" aria-invalid="false" name="email">
+        <label for="email"></label>
+        <input id="email" placeholder="Your email address..." class="w-full rounded-full border-2 border-light-blue" aria-invalid="false" name="email">
       </form>
       <button>Notify Me</button>
       <div aria-live="polite" aria-atomic="true">

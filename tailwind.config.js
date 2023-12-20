@@ -14,7 +14,9 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       "custom-gray": "#969696",
-      "custom-black": "#15202A"
+      "custom-black": "#15202A",
+      "light-blue": "#C2D3FF",
+      "strong-blue": "#4C7BF3"
     }
   },
   plugins: [],
