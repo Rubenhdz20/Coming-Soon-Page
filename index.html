@@ -8,10 +8,11 @@
   <title>Ping Coming Soon Page</title>
 </head>
 <body>
-  <div class="flex min-h-screen flex-col items-center justify-center gap-9 p-6 text-center transition-colors duration-300 dark:bg-gray-900 md:p-10">
+  <div class="flex min-h-screen flex-col items-center justify-center gap-12 p-6 text-center transition-colors duration-300 dark:bg-gray-900 md:p-10">
+
     <header>
       <a href="">
-        <img src="./public/images/PING Mobile.svg" alt="Business Name">
+        <img src="./public/images/PING.svg" alt="Business Name">
       </a>
       <label class="absolute top-6 right-6 h-6 w-6 md:top-10 md:right-10">
         <input type="checkbox" class="absolute top-0 left-0 h-full w-full cursor-pointer opacity-0" aria-label="Dark Mode">
@@ -20,38 +21,46 @@
         </svg>
       </label>
     </header>
+
     <main class="flex flex-col gap-4">
-      <h1 class="text-2xl font-light text-custom-gray">We are launching <span class="text-custom-black">soon!</span></h1>
+      <h1 class="text-2xl font-light text-custom-gray">We are launching <span class="text-custom-black font-bold">soon!</span></h1>
+
       <p>Subscribe and get notified</p>
+
       <form class="relative mx-auto mt-4 grid w-full max-w-[39.375rem] gap-y-3 md:grid-cols-[2.15fr,1fr] md:gap-x-4 md:gap-y-2">
         <label for="email"></label>
         <input id="email" placeholder="Your email address..." class="w-full rounded-full border-2 border-light-blue p-2 text-custom-black placeholder-light-blue transition-colors duration-300 ease-in-out md:p-3 focus:border-strong-blue dark:border-gray-700 dark:bg-gray-900 dark:text-stone-50 dark:placeholder-stone-50" aria-invalid="false" name="email">
+        <button class="w-full p-2 text-custom-white rounded-full bg-strong-blue transition-colors duration-300 ease-in-out hover:bg-pale-blue">Notify Me</button>
       </form>
-      <button class="w-full p-2 text-custom-white rounded-full bg-strong-blue transition-colors duration-300 ease-in-out hover:bg-pale-blue">Notify Me</button>
+      
       <div aria-live="polite" aria-atomic="true">
         <span id="email-error" role="alert">"Please add your email"</span>
       </div>
-      <img src="./public/images/illustration-dashboard.png" alt="Demo image" aria-hidden="true">
+
+      <img class="w-full max-w-[640px] mx-auto mt-16 mb-8" src="./public/images/illustration-dashboard.png" alt="Demo image" aria-hidden="true">
     </main>
-    <footer>
-      <ul>
+
+    <footer class="flex flex-col gap-4">
+      <ul class="flex flex-row justify-center gap-4">
         <li>
           <a href="#">
-            <img src="./public/images/logo-facebook.svg" alt="Facebook Account">
+            <img class="w-[29px] h-[29px]" src="./public/images/logo-facebook.svg" alt="Facebook Account">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="./public/images/logo-twitter.svg" alt="Twitter Account">
+            <img class="w-[29px] h-[29px]" src="./public/images/logo-twitter.svg" alt="Twitter Account">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="./public/images/logo-instagram.svg" alt="Instagram Account">
+            <img class="w-[29px] h-[29px]" src="./public/images/logo-instagram.svg" alt="Instagram Account">
           </a>
         </li>
       </ul>
+
       <p>&copy; Copyright Ping. All rights reserved.</p>
+
       <p class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="https://github.com/Rubenhdz20">Ruben Hernandez</a>.
