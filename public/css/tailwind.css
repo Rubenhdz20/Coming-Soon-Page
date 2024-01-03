@@ -44,7 +44,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Libre Franklin, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -581,14 +581,6 @@ video {
   margin-top: 1rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .mt-7 {
   margin-top: 1.75rem;
 }
@@ -695,10 +687,6 @@ video {
   padding: 1.5rem;
 }
 
-.p-\[\] {
-  padding: ;
-}
-
 .p-\[0\.35rem\] {
   padding: 0.35rem;
 }
@@ -790,6 +778,25 @@ video {
 .focus\:border-strong-blue:focus {
   --tw-border-opacity: 1;
   border-color: rgb(76 123 243 / var(--tw-border-opacity));
+}
+
+:is(.dark .dark\:bg-custom-gray-strong) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:text-custom-white) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-custom-black) {
+  --tw-text-opacity: 1;
+  color: rgb(21 32 42 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:filter) {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 @media (min-width: 768px) {
