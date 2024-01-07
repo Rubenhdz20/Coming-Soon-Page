@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   content: [
   './pages/**/*.{html,js}',
@@ -19,7 +22,8 @@ module.exports = {
       "custom-black": "#15202A",
       "light-blue": "#C2D3FF",
       "pale-blue": "hsl(223, 100%, 88%)",
-      "strong-blue": "#4C7BF3"
+      "strong-blue": "#4C7BF3",
+      ...colors,
     },
     fontFamily: {
       sans: ['Libre Franklin', 'sans-serif'],
@@ -27,4 +31,3 @@ module.exports = {
   },
   plugins: [],
 }
-
