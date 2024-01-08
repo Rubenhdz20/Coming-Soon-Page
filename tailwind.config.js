@@ -28,6 +28,9 @@ module.exports = {
     fontFamily: {
       sans: ['Libre Franklin', 'sans-serif'],
     },
+    fontSize: {
+      normal: "1.25rem",
+    },
   },
   plugins: [],
 }
