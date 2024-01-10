@@ -9,12 +9,12 @@ notifyButton.addEventListener('click', function() {
   
     if (!isValidEmail || emailInput.value === '') {
     // Display error message
-    errorMessage.classList.add("text-red-400");
+    errorMessage.classList.add("flex", "items-center", "bottom-6", "text-red-400");
     errorMessage.classList.remove("hidden");
   
     // Add error class to the input for styling
     emailInput.classList.remove('border-light-blue', 'placeholder-light-blue', 'focus:border-strong-blue');
-    emailInput.classList.add('!border-red-400', '!placeholder-red-400', '!focus:border-red-400');
+    emailInput.classList.add('border-red-400', 'placeholder-red-400', 'focus:border-red-400');
     } else {
     // Clear error message and styling if the email is valid
     errorMessage.classList.add('hidden');
