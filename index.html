@@ -35,15 +35,16 @@
 
       <form class="relative mx-auto mt-4 grid w-full max-w-[39.375rem] gap-y-3 md:grid-cols-[2.15fr,1fr] md:gap-x-4 md:gap-y-2">
         <label for="email" class="absolute overflow-hidden"></label>
-        <input id="email" placeholder="Your email address..." class="w-full rounded-full border-2 border-light-blue p-2 text-custom-black placeholder-light-blue transition-colors duration-300 ease-in-out md:p-3 focus:border-strong-blue dark:border-gray-700 dark:bg-custom-gray-strong dark:text-stone-50 dark:placeholder-stone-50" name="email">
+        <input id="email" placeholder="Your email address..." class="w-full rounded-full border-2 border-light-blue p-2 text-custom-black placeholder-light-blue transition-colors duration-300 ease-in-out md:p-3   dark:border-gray-700 dark:bg-custom-gray-strong dark:text-stone-50 dark:placeholder-stone-50" name="email">
         <button id="notify-button" class="w-full p-2 text-custom-white rounded-full bg-strong-blue transition-colors duration-300 ease-in-out hover:bg-pale-blue dark:text-custom-black" type="button">Notify Me</button>
       </form>
       
       <div>
-        <span id="email-error" class="hidden" role="alert">Please provide a valid email addres</span>
+        <span id="email-error" class="hidden text-custom-red" role="alert">Please provide a valid email addres</span>
+        <span id="thankYouMessage" class="hidden text-green-500">Thank you for subscribing!</span>
       </div>
 
-      <img class="mx-auto mt-16 mb-8 block w-full max-w-[640px] dark:filter-white transition-filter dark:mix-blend-screen" src="./public/images/illustration-dashboard.png" alt="Demo image" aria-hidden="true">
+      <img id="slack" class="mx-auto mt-16 mb-8 block w-full max-w-[640px] dark:filter-white transition-filter dark:mix-blend-screen dark:opacity-80" src="./public/images/illustration-dashboard.png" alt="Demo image" aria-hidden="true">
     </main>
 
     <footer class="flex flex-col gap-4">

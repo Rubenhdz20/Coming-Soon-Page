@@ -686,6 +686,11 @@ video {
   border-color: rgb(194 211 255 / var(--tw-border-opacity));
 }
 
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
 .bg-strong-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(76 123 243 / var(--tw-bg-opacity));
@@ -733,6 +738,11 @@ video {
   color: rgb(150 150 150 / var(--tw-text-opacity));
 }
 
+.text-custom-red {
+  --tw-text-opacity: 1;
+  color: rgb(255 84 102 / var(--tw-text-opacity));
+}
+
 .text-custom-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -743,9 +753,9 @@ video {
   color: rgb(76 123 243 / var(--tw-text-opacity));
 }
 
-.text-red-400 {
+.text-green-500 {
   --tw-text-opacity: 1;
-  color: rgb(248 113 113 / var(--tw-text-opacity));
+  color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 
 .placeholder-light-blue::-moz-placeholder {
@@ -776,6 +786,11 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.hover\:border-red-500:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
 .hover\:bg-pale-blue:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(223 100% 88% / var(--tw-bg-opacity));
@@ -794,6 +809,11 @@ video {
 .focus\:border-strong-blue:focus {
   --tw-border-opacity: 1;
   border-color: rgb(76 123 243 / var(--tw-border-opacity));
+}
+
+.focus\:border-red-500:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 :is(.dark .dark\:border-gray-700) {
@@ -834,6 +854,30 @@ video {
 :is(.dark .dark\:placeholder-stone-50)::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(250 250 249 / var(--tw-placeholder-opacity));
+}
+
+:is(.dark .dark\:opacity-0) {
+  opacity: 0;
+}
+
+:is(.dark .dark\:opacity-70) {
+  opacity: 0.7;
+}
+
+:is(.dark .dark\:opacity-50) {
+  opacity: 0.5;
+}
+
+:is(.dark .dark\:opacity-30) {
+  opacity: 0.3;
+}
+
+:is(.dark .dark\:opacity-100) {
+  opacity: 1;
+}
+
+:is(.dark .dark\:opacity-80) {
+  opacity: 0.8;
 }
 
 :is(.dark .dark\:mix-blend-screen) {
